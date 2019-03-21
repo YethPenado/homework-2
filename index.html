@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css"/>
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+  <title>Sheets application</title>
+</head>
+
+<body>
+  <div class="tool-bar">
+    <button class="add tool-buttons" id="add-column">Add Column <i class="add-icon fas fa-plus"></i></button>
+    <button class="add tool-buttons" id="add-row">Add Row <i class="add-icon fas fa-plus"></i></button>
+
+    <select name="font-size" id="font-sizes" disabled>
+      <option value="" selected>Choose your text size</option>
+      <option value="">8px</option>
+      <option value="">10px</option>
+      <option value="">12px</option>
+      <option value="">14px</option>
+      <option value="">18px</option>
+      <option value="">20px</option>
+    </select>
+
+    <button class="tool-buttons text-modifier" id="bold" disabled>B</button> 
+    <button class="tool-buttons text-modifier" id="italic" disabled>I</button>
+
+    <button class="remove tool-buttons" id="remove" hidden="true"><i class="fas fa-trash-alt"></i></button>
+  </div>
+
+  <div class="table-container">
+    <table id="table">
+      <thead>
+        <tr id="table-head">
+          <th></th>
+          <th>A</th>
+          <th>B</th>
+          <th>C</th>
+          <th>D</th>
+          <th>E</th>
+          <th>F</th>
+          <th>G</th>
+          <th>H</th>
+          <th>I</th>
+          <th>J</th>
+          <th>K</th>
+          <th>L</th>
+          <th>M</th>
+          <th>N</th>
+          <th>O</th>
+        </tr>
+      </thead>
+
+      <tbody id="bodyTable">
+        <tr class="rowsGenerator">
+          <td>1</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+
+        <tr class="rowsGenerator">
+          <td>2</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+
+        <tr class="rowsGenerator">
+          <td>3</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+
+        <tr class="rowsGenerator">
+          <td>4</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+
+        <tr class="rowsGenerator">
+          <td>5</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+
+        <tr class="rowsGenerator">
+          <td>6</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+
+        <tr class="rowsGenerator">
+          <td>7</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+
+        <tr class="rowsGenerator">
+          <td>8</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+
+        <tr class="rowsGenerator">
+          <td>9</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+
+        <tr class="rowsGenerator">
+          <td>10</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

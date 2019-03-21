@@ -1,0 +1,83 @@
+*{
+  font-family: 'Asap', sans-serif;
+}
+
+html{
+  background-color: #F2E4E9;
+  cursor: url(../img/cursor.png), auto;
+}
+
+option{
+  font-weight: bold;
+}
+
+select{
+  background-color: #E4CAE5;
+  border: solid #C3A1C6;
+  cursor: url(../img/pointer.png), auto;
+  font-size: 1em;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-right: 2%;
+  padding: 10px;
+}
+
+table{
+  text-align: center;
+  width: 100%;
+}
+
+td{
+  background-color: whitesmoke;
+  border: 2px solid #9BA09E;
+  cursor: url(../img/pointer.png), auto;
+  padding: 8px 10px;
+}
+
+th{
+  background-color: #FBC277;
+  border: 3px solid #FFB047;
+  padding: 15px 20px;
+}
+
+.add{
+  margin-left: 20px;
+  padding: 10px 15px;
+}
+.center{
+  margin: 0 auto;
+}
+.remove{
+  float: right;
+  font-size: 20px;
+  padding: 10px 18px;
+}
+
+.table-container{
+  margin-top: 2%;
+}
+
+.text-modifier{
+  padding: 10px 18px;
+  margin-right: 20px;
+}
+
+.tool-bar{
+  background-color: #B1C4BB;
+  border: 3px solid #8A9F95;
+  padding: 10px;
+  margin-top: 2%;
+}
+
+.tool-buttons{
+  background-color: #E4CAE5;
+  border: solid #C3A1C6;
+  border-radius: 4px;
+  border-width: 1px 0 3px 3px;
+  cursor: url(../img/pointer.png), auto;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+/* #E8E7E8 */
